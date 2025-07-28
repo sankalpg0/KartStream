@@ -1,0 +1,67 @@
+version: "3.8"
+services:
+  adservice:
+    build:
+      context: ./adservice
+      dockerfile: Dockerfile
+    image: 0sankalp/adservice:1:0:0
+
+  cartservice:
+    build:
+      context: ./cartservice
+      dockerfile: Dockerfile
+    image: 0sankalp/cartservice:1:0:0
+
+  checkoutservice:
+    build:
+      context: ./checkoutservice
+      dockerfile: Dockerfile
+    image: 0sankalp/checkoutservice:1:0:0
+
+  currencyservice:
+    build:
+      context: ./currencyservice
+      dockerfile: Dockerfile
+    image: 0sankalp/currencyservice:1:0:0
+  
+  emailservice:
+    build:
+      context: ./emailservice
+      dockerfile: Dockerfile
+    image: 0sankalp/emailservice:1:0:0
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: 0sankalp/frontend:1:0:0
+
+  loadgenerator:
+    build:
+      context: ./loadgenerator
+      dockerfile: Dockerfile
+    image: 0sankalp/loadgenerator:1:0:0
+
+  paymentservice:
+    build:
+      context: ./paymentservice
+      dockerfile: Dockerfile
+    image: 0sankalp/paymentservice:1:0:0
+
+  productcatalogservice:
+    build:
+      context: ./productcatalogservice
+      dockerfile: Dockerfile
+    image: 0sankalp/productcatalogservice:1:0:0
+
+  recommendationservice:
+    build:
+      context: ./recommendationservice
+      dockerfile: Dockerfile
+    image: 0sankalp/recommendationservice:1:0:0
+
+  shippingservice:
+    build:
+      context: ./shippingservice
+      dockerfile: Dockerfile
+    image: 0sankalp/shippingservice:1:0:0
