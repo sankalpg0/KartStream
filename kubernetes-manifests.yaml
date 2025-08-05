@@ -642,7 +642,7 @@ spec:
     port: 7000
     targetPort: 7000
 ---
-#
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
