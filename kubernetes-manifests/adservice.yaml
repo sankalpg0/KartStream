@@ -32,7 +32,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: adservice
+        image: 0sankalp/adservice:1.0.0
         ports:
         - containerPort: 9555
         env:

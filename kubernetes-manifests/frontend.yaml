@@ -33,7 +33,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: frontend
+          image: 0sankalp/frontend:1.0.0
           ports:
           - containerPort: 8080
           readinessProbe:

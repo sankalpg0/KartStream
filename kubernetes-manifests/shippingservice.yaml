@@ -31,7 +31,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: shippingservice
+        image: 0sankalp/shippingservice:1.0.0
         ports:
         - containerPort: 50051
         env:

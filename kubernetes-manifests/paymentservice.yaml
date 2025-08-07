@@ -32,7 +32,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: paymentservice
+        image: 0sankalp/paymentservice:1.0.0
         ports:
         - containerPort: 50051
         env:

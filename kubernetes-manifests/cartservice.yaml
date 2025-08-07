@@ -32,7 +32,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: cartservice
+        image: 0sankalp/cartservice:1.0.0
         ports:
         - containerPort: 7070
         env:

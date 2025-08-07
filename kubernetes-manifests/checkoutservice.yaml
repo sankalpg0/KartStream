@@ -31,7 +31,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: checkoutservice
+          image: 0sankalp/checkoutservice:1.0.0
           ports:
           - containerPort: 5050
           readinessProbe:

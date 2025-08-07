@@ -32,7 +32,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: emailservice
+        image: 0sankalp/emailservice:1.0.0
         ports:
         - containerPort: 8080
         env:
