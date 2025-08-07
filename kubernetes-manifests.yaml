@@ -18,6 +18,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
       - name: server
         securityContext:
@@ -83,6 +88,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
         - name: server
           securityContext:
@@ -157,6 +167,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
       - name: server
         securityContext:
@@ -204,7 +219,8 @@ spec:
   - name: grpc
     port: 8080
     targetPort: 8080
----apiVersion: apps/v1
+---
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
@@ -225,6 +241,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "frontend"
+        effect: "NoSchedule"
       containers:
         - name: server
           securityContext:
@@ -334,6 +355,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
       - name: server
         securityContext:
@@ -398,6 +424,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
       - name: server
         securityContext:
@@ -462,6 +493,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
       - name: server
         securityContext:
@@ -531,6 +567,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "frontend"
+        effect: "NoSchedule"
       initContainers:
       - command:
         - /bin/sh
@@ -597,6 +638,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
       - name: server
         securityContext:
@@ -642,7 +688,6 @@ spec:
     port: 7000
     targetPort: 7000
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -662,6 +707,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
       - name: server
         securityContext:
@@ -725,6 +775,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "database"
+        effect: "NoSchedule"
       containers:
       - name: redis
         securityContext:
@@ -792,6 +847,11 @@ spec:
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
+      tolerations:            # for scheduling on nodes with taints
+      - key: "role"
+        operator: "Equal"
+        value: "backend"
+        effect: "NoSchedule"
       containers:
       - name: server
         securityContext:
