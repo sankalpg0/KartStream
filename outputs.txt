@@ -1,0 +1,98 @@
+NAME                                     READY   STATUS             RESTARTS        AGE
+adservice-984b8574-62mdg                 1/1     Running            0               2d18h
+cartservice-749c6bf6d5-96qcr             1/1     Running            0               2d18h
+checkoutservice-6656fdb484-spmnq         1/1     Running            0               2d18h
+currencyservice-d59987cdb-zlqsk          1/1     Running            13 (26m ago)    2d18h
+emailservice-6c9896bbfd-hmz6r            1/1     Running            0               2d18h
+frontend-5cdb7c8856-zmjsd                1/1     Running            0               2d18h
+paymentservice-544bf9596b-4s5f2          1/1     Running            12 (4h9m ago)   2d18h
+productcatalogservice-64b76c5df8-pfztv   1/1     Running            0               2d18h
+recommendationservice-6bdbbc4fdd-2jwtq   1/1     Running            0               2d18h
+redis-cart-8dbf7cf4b-chmhf               1/1     Running            0               2d18h
+shippingservice-59848c8745-h8xkz         1/1     Running            0               2d18h
+test-metrics                             0/1     ImagePullBackOff   0               2d16h
+NAME                    TYPE           CLUSTER-IP       EXTERNAL-IP                                                               PORT(S)        AGE
+adservice               ClusterIP      10.100.79.101    <none>                                                                    9555/TCP       2d18h
+cartservice             ClusterIP      10.100.163.167   <none>                                                                    7070/TCP       2d18h
+checkoutservice         ClusterIP      10.100.64.115    <none>                                                                    5050/TCP       2d18h
+currencyservice         ClusterIP      10.100.237.78    <none>                                                                    7000/TCP       2d18h
+emailservice            ClusterIP      10.100.239.188   <none>                                                                    5000/TCP       2d18h
+frontend                ClusterIP      10.100.66.94     <none>                                                                    80/TCP         2d18h
+frontend-external       LoadBalancer   10.100.51.222    a2fc5964c6d18487ab69852f404af19f-831725361.ap-south-1.elb.amazonaws.com   80:31366/TCP   2d18h
+kubernetes              ClusterIP      10.100.0.1       <none>                                                                    443/TCP        2d19h
+paymentservice          ClusterIP      10.100.166.120   <none>                                                                    50051/TCP      2d18h
+productcatalogservice   ClusterIP      10.100.123.203   <none>                                                                    3550/TCP       2d18h
+recommendationservice   ClusterIP      10.100.186.145   <none>                                                                    8080/TCP       2d18h
+redis-cart              ClusterIP      10.100.183.86    <none>                                                                    6379/TCP       2d18h
+shippingservice         ClusterIP      10.100.130.137   <none>                                                                    50051/TCP      2d18h
+test-metrics-service    ClusterIP      10.100.99.43     <none>                                                                    8080/TCP       2d16h
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
+adservice               1/1     1            1           2d18h
+cartservice             1/1     1            1           2d18h
+checkoutservice         1/1     1            1           2d18h
+currencyservice         1/1     1            1           2d18h
+emailservice            1/1     1            1           2d18h
+frontend                1/1     1            1           2d18h
+paymentservice          1/1     1            1           2d18h
+productcatalogservice   1/1     1            1           2d18h
+recommendationservice   1/1     1            1           2d18h
+redis-cart              1/1     1            1           2d18h
+shippingservice         1/1     1            1           2d18h
+NAME                               DESIRED   CURRENT   READY   AGE
+adservice-984b8574                 1         1         1       2d18h
+cartservice-749c6bf6d5             1         1         1       2d18h
+checkoutservice-6656fdb484         1         1         1       2d18h
+currencyservice-d59987cdb          1         1         1       2d18h
+emailservice-6c9896bbfd            1         1         1       2d18h
+frontend-5cdb7c8856                1         1         1       2d18h
+paymentservice-544bf9596b          1         1         1       2d18h
+productcatalogservice-64b76c5df8   1         1         1       2d18h
+recommendationservice-6bdbbc4fdd   1         1         1       2d18h
+redis-cart-8dbf7cf4b               1         1         1       2d18h
+shippingservice-59848c8745         1         1         1       2d18h
+NAME                                                         READY   STATUS    RESTARTS   AGE
+pod/alertmanager-monitoring-kube-prometheus-alertmanager-0   2/2     Running   0          2d18h
+pod/alertmanager-monitoring-kube-prometheus-alertmanager-1   2/2     Running   0          2d18h
+pod/monitoring-grafana-7f85f98dcb-fg4wz                      3/3     Running   0          2d18h
+pod/monitoring-kube-prometheus-operator-684d77995c-zqnwd     1/1     Running   0          2d18h
+pod/monitoring-kube-state-metrics-585b45df98-wxvzx           1/1     Running   0          2d18h
+pod/monitoring-prometheus-node-exporter-cjc9r                1/1     Running   0          2d18h
+pod/monitoring-prometheus-node-exporter-f9shh                1/1     Running   0          2d18h
+pod/monitoring-prometheus-node-exporter-klrr2                1/1     Running   0          2d18h
+pod/monitoring-prometheus-node-exporter-rnh96                1/1     Running   0          2d18h
+pod/prometheus-monitoring-kube-prometheus-prometheus-0       2/2     Running   0          2d18h
+
+NAME                                              TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
+service/alertmanager-operated                     ClusterIP   None             <none>        9093/TCP,9094/TCP,9094/UDP   2d18h
+service/monitoring-grafana                        ClusterIP   10.100.46.159    <none>        80/TCP                       2d18h
+service/monitoring-kube-prometheus-alertmanager   ClusterIP   10.100.111.210   <none>        9093/TCP,8080/TCP            2d18h
+service/monitoring-kube-prometheus-operator       ClusterIP   10.100.240.12    <none>        443/TCP                      2d18h
+service/monitoring-kube-prometheus-prometheus     ClusterIP   10.100.139.22    <none>        9090/TCP,8080/TCP            2d18h
+service/monitoring-kube-state-metrics             ClusterIP   10.100.28.156    <none>        8080/TCP                     2d18h
+service/monitoring-prometheus-node-exporter       ClusterIP   10.100.136.232   <none>        9100/TCP                     2d18h
+service/prometheus-operated                       ClusterIP   None             <none>        9090/TCP                     2d18h
+
+NAME                                                 DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
+daemonset.apps/monitoring-prometheus-node-exporter   4         4         4       4            4           kubernetes.io/os=linux   2d18h
+
+NAME                                                  READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/monitoring-grafana                    1/1     1            1           2d18h
+deployment.apps/monitoring-kube-prometheus-operator   1/1     1            1           2d18h
+deployment.apps/monitoring-kube-state-metrics         1/1     1            1           2d18h
+
+NAME                                                             DESIRED   CURRENT   READY   AGE
+replicaset.apps/monitoring-grafana-7f85f98dcb                    1         1         1       2d18h
+replicaset.apps/monitoring-kube-prometheus-operator-684d77995c   1         1         1       2d18h
+replicaset.apps/monitoring-kube-state-metrics-585b45df98         1         1         1       2d18h
+
+NAME                                                                    READY   AGE
+statefulset.apps/alertmanager-monitoring-kube-prometheus-alertmanager   2/2     2d18h
+statefulset.apps/prometheus-monitoring-kube-prometheus-prometheus       1/1     2d18h
+
+
+
+kubectl get pods > outputs.txt
+kubectl get svc >> outputs.txt
+kubectl get deployment >> outputs.txt
+kubectl get ReplicaSets >> outputs.txt
+kubectl get all -n monitoring >> outputs.txt
