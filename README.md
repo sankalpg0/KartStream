@@ -33,17 +33,17 @@ The application follows a **multi-tier architecture**:
 
 ```bash
 NAME                                     READY   STATUS             RESTARTS        AGE
-adservice-984b8574-62mdg                 1/1     Running            0               2d18h
-cartservice-749c6bf6d5-96qcr             1/1     Running            0               2d18h
-checkoutservice-6656fdb484-spmnq         1/1     Running            0               2d18h
-currencyservice-d59987cdb-zlqsk          1/1     Running            1 (26m ago)     2d18h
-emailservice-6c9896bbfd-hmz6r            1/1     Running            0               2d18h
-frontend-5cdb7c8856-zmjsd                1/1     Running            0               2d18h
-paymentservice-544bf9596b-4s5f2          1/1     Running            1 (4h9m ago)    2d18h
-productcatalogservice-64b76c5df8-pfztv   1/1     Running            0               2d18h
-recommendationservice-6bdbbc4fdd-2jwtq   1/1     Running            0               2d18h
-redis-cart-8dbf7cf4b-chmhf               1/1     Running            0               2d18h
-shippingservice-59848c8745-h8xkz         1/1     Running            0               2d18h
+adservice-984b8574-62mdg                 1/1     Running            0               1h
+cartservice-749c6bf6d5-96qcr             1/1     Running            0               1h
+checkoutservice-6656fdb484-spmnq         1/1     Running            0               1h
+currencyservice-d59987cdb-zlqsk          1/1     Running            0               1h
+emailservice-6c9896bbfd-hmz6r            1/1     Running            0               1h
+frontend-5cdb7c8856-zmjsd                1/1     Running            0               1h
+paymentservice-544bf9596b-4s5f2          1/1     Running            0               1h
+productcatalogservice-64b76c5df8-pfztv   1/1     Running            0               1h
+recommendationservice-6bdbbc4fdd-2jwtq   1/1     Running            0               1h
+redis-cart-8dbf7cf4b-chmhf               1/1     Running            0               1h
+shippingservice-59848c8745-h8xkz         1/1     Running            0               1h
 ```
 
 ---
